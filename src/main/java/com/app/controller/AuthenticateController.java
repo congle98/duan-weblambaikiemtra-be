@@ -65,6 +65,7 @@ public class AuthenticateController {
         //tạo đối tượng userdetail từ authen.getPrincipal
         System.out.println("jwt là "+jwt);
 
+
         return new ResponseEntity<>(
                     new JwtResponse(jwt), HttpStatus.OK);
 

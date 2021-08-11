@@ -1,5 +1,6 @@
 package com.app.configs;
 
+import com.app.models.User;
 import com.app.services.user.UserDetailsServiceImpl;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;

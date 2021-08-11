@@ -61,11 +61,7 @@ public class TestController {
         testService.save(test);
 
 
-//
-//        Map<String, Object> testInfo = new HashMap<>();
-//        testInfo.put("marksGot",marksGot);
-//        testInfo.put("correctAnswers",correctAnswers);
-//        testInfo.put("attempted",attempted);
+
 
 
         return new ResponseEntity<>( testService.save(test), HttpStatus.OK);
