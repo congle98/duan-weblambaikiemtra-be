@@ -63,7 +63,7 @@ public class QuestionController {
                 questions = questions.subList(0,Integer.parseInt(quiz.getNumberOfQuestion())+1);
         }
         //trộn câu hỏi
-        Collections.shuffle(questions);
+//        Collections.shuffle(questions);
         return new ResponseEntity<>(questions,HttpStatus.OK);
     }
 
