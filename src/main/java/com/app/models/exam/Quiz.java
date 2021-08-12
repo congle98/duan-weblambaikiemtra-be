@@ -32,7 +32,7 @@ public class Quiz {
     @ManyToOne(fetch = FetchType.EAGER)
     private Category category;
 
-    @OneToMany(mappedBy = "quiz",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "quiz",fetch = FetchType.EAGER,cascade = CascadeType.ALL)
     @JsonIgnore
     private List<Question> questions = new ArrayList<>();
 
