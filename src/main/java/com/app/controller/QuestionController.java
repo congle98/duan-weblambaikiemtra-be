@@ -60,10 +60,10 @@ public class QuestionController {
       Quiz quiz =   quizService.findById(quizId).get();
         List<Question> questions = quiz.getQuestions();
         if(questions.size()>Integer.parseInt(quiz.getNumberOfQuestion())){
-                questions = questions.subList(0,Integer.parseInt(quiz.getNumberOfQuestion())+1);
+                questions = questions.subList(0,Integer.parseInt(quiz.getNumberOfQuestion())-1);
         }
         //trộn câu hỏi
-//        Collections.shuffle(questions);
+        Collections.shuffle(questions);
         return new ResponseEntity<>(questions,HttpStatus.OK);
     }
 
